@@ -4,10 +4,10 @@ import time
 
 #Led light
 #num_pixels = 5  # Adjust for your setup
-pixels = Neopixel(1, 0, 16, "RGB")  # Ensure correct GRB order
+pixels = Neopixel(1, 0, 0, "RGB")  # Ensure correct GRB order
 
 # Initialize toggle switch with pull-up resistor
-toggle_switch = Pin(15  , Pin.IN, Pin.PULL_UP)
+toggle_switch = Pin(16  , Pin.IN, Pin.PULL_UP)
 
 while True:
     if toggle_switch.value() == 0:  # Switch is pressed (LOW)
